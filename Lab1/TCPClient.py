@@ -1,18 +1,29 @@
 from socket import *
+def create_socket(addr,port):
+	clientSocket = socket(AF_INET, SOCK_STREAM)
+	clientSocket.connect((addr,port))
+	return clientSocket
 
-serverName = '127.0.0.1'
-serverPort = 12000
 
-clientSocket = socket(AF_INET, SOCK_STREAM)
+def enviar_msj(clientSocket,msj):
+	clientSocket.send(msj.encode())
 
-clientSocket.connect((serverName,serverPort))
+def recibir_msj(clientSocket):
+	modifiedSentence = clientSocket.recv(1024)
+	return modifiedSentence
 
-sentence = input('Input lowercase sentence:')
+def cerrar_socket(clientSocket):
+	clientSocket.close()
 
-clientSocket.send(sentence.encode())
+def main():
+	serverName = '127.0.0.1'
+	serverPort = 12000
+	clientSocket=create_socket(serverName,serverPort)
+	sentence = input('ingrese un mensaje: ')
+	enviar_msj(clientSocket,sentence)
+	mensaje=recibir_msj(clientSocket)
+	print('devolucion del Server: ' + mensaje.decode())
+	cerrar_socket(clientSocket)
 
-modifiedSentence = clientSocket.recv(1024)
-
-print('From Server: ' + modifiedSentence.decode())
-
-clientSocket.close()
+if __name__ == "__main__":
+	main()
