@@ -1,4 +1,6 @@
 from socket import *
+
+
 def create_socket(addr,port):
 	clientSocket = socket(AF_INET, SOCK_STREAM)
 	clientSocket.connect((addr,port))

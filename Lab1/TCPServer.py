@@ -1,8 +1,8 @@
 from socket import *
 
+
 serverName = '127.0.0.1'
 serverPort = 12000
-
 
 def create_socket(addr,port):
 	serverSocket = socket(AF_INET, SOCK_STREAM)
@@ -30,8 +30,7 @@ def main ():
 		mensaje=modificar_msj(mensaje)
 		enviar_msj(connectionSocket,mensaje)
 		cerrar_socket(connectionSocket)
-
-
+	
 
 if __name__ == '__main__':
 	main()
