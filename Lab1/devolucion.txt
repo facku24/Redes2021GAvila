@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------
+							DEVOLUCION
+-------------------------------------------------------------------------
+NOMBRE: Avila, Gustavo
+CALIFICACIÓN: 0.43 (No Aprobado)
+Recordar: La calificación del laboratorio va de 0 (No Aprobado) a 1
+ (Aprobado). La calificación no es definitiva y puede modificarse a 
+ medida que el laboratorio sea mejorado.
+-------------------------------------------------------------------------
+							COMENTARIOS
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+							CODIFICACION (1 - Aprobado)
+-------------------------------------------------------------------------
+	* Muy buen estilo de condificación. Prolijidad y factorización.
+
+-------------------------------------------------------------------------
+						FUNCIONAMIENTO (0.3 - No Aprobado)
+-------------------------------------------------------------------------
+* Si bien hay buen estilo de programacion y una buena arquitectura de base
+  no se han implementado correctamente los enunciados del laboratorio por
+  lo que aún no se considera correctamente entregado
+
+-------------------------------------------------------------------------
+						ENTREGA (0 - No Aprobado)
+-------------------------------------------------------------------------
+* No se ha hecho una entrega del laboratorio funcionando segun lo requerido
+  por el enunciado por lo que (por el momento) este valor es 0. A futuro 
+  puede modificarse cuando sea entregado correctamente.
